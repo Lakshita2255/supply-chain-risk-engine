@@ -1,0 +1,329 @@
+/* ============================================================
+   LIVE.CSS — Live Monitoring / Command Center Page
+   Supply Chain Risk Prediction Engine
+   ============================================================ */
+
+/* --- Command Center Grid --- */
+.command-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 340px;
+  gap: var(--space-6);
+  height: calc(100vh - 140px);
+}
+
+/* --- Live Feed --- */
+.live-feed {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-height: 100%;
+  overflow-y: auto;
+  padding-right: var(--space-2);
+}
+
+.feed-section-title {
+  font-size: var(--font-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+  position: sticky;
+  top: 0;
+  background: var(--bg-primary);
+  padding: var(--space-2) 0;
+  z-index: 2;
+}
+
+.feed-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--text-muted);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  transition: background-color var(--transition-fast);
+}
+
+.feed-item.severity-low    { border-left-color: var(--accent-emerald); }
+.feed-item.severity-medium { border-left-color: var(--accent-amber); }
+.feed-item.severity-high   { border-left-color: var(--accent-rose); }
+.feed-item.severity-info   { border-left-color: var(--accent-blue); }
+
+.feed-item.new {
+  animation: feedFlash 1s ease;
+}
+
+@keyframes feedFlash {
+  0%   { background: var(--accent-blue-glow); box-shadow: 0 0 15px var(--accent-blue-glow); }
+  100% { background: var(--bg-card); box-shadow: none; }
+}
+
+.feed-item-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-1);
+}
+
+.feed-timestamp {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.feed-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.feed-message {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* --- Status Board --- */
+.status-board {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-height: 100%;
+  overflow-y: auto;
+  padding-right: var(--space-2);
+}
+
+.status-board-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.status-board-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.status-board-id {
+  font-size: var(--font-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* --- Progress Bar --- */
+.progress-bar {
+  height: 6px;
+  background: var(--bg-secondary);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: var(--space-2);
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+  transition: width 1s ease;
+  position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* --- Alert Panel --- */
+.alert-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-height: 100%;
+  overflow-y: auto;
+  padding-right: var(--space-2);
+}
+
+.alert-panel-title {
+  font-size: var(--font-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+  position: sticky;
+  top: 0;
+  background: var(--bg-primary);
+  padding: var(--space-2) 0;
+  z-index: 2;
+}
+
+.alert-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid var(--accent-amber);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.alert-card.warning  { border-left-color: var(--accent-amber); }
+.alert-card.critical { border-left-color: var(--accent-rose); }
+.alert-card.info     { border-left-color: var(--accent-blue); }
+
+.alert-card.critical {
+  animation: criticalPulse 2s ease-in-out infinite;
+}
+
+@keyframes criticalPulse {
+  0%, 100% { box-shadow: none; }
+  50%      { box-shadow: 0 0 12px var(--accent-rose-glow), inset 0 0 8px var(--accent-rose-glow); }
+}
+
+.alert-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.alert-card-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.alert-card-title {
+  font-size: var(--font-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.alert-card-desc {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: var(--space-3);
+}
+
+.alert-card-actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+/* --- System Health --- */
+.system-health {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-6);
+}
+
+.health-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 6px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  font-size: var(--font-xs);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.health-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.health-dot.healthy {
+  background: var(--accent-emerald);
+  box-shadow: 0 0 6px var(--accent-emerald-glow);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.health-dot.degraded {
+  background: var(--accent-amber);
+  box-shadow: 0 0 6px var(--accent-amber-glow);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.health-dot.down {
+  background: var(--accent-rose);
+  box-shadow: 0 0 6px var(--accent-rose-glow);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+/* --- Connection Status --- */
+.connection-status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.connection-status.connected {
+  background: var(--accent-emerald-glow);
+  color: var(--accent-emerald);
+}
+
+.connection-status.disconnected {
+  background: var(--accent-rose-glow);
+  color: var(--accent-rose);
+}
+
+.connection-status .health-dot {
+  width: 6px;
+  height: 6px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1200px) {
+  .command-center {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
+
+  .alert-panel {
+    grid-column: 1 / -1;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .command-center {
+    grid-template-columns: 1fr;
+  }
+
+  .live-feed,
+  .status-board,
+  .alert-panel {
+    max-height: 400px;
+  }
+
+  .system-health {
+    gap: var(--space-2);
+  }
+}

@@ -1,0 +1,34 @@
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Node modules (frontend dependencies)
+node_modules/
+frontend/node_modules/
+
+# Production build output
+dist/
+frontend/dist/
+build/
+frontend/build/
+
+# Trained models (since they are generated automatically on startup)
+backend/models/trained/
+
+# IDEs and editors configuration
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db

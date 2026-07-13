@@ -1,0 +1,247 @@
+/* ============================================================
+   TRACKER.CSS — Shipment Tracker Page
+   Supply Chain Risk Prediction Engine
+   ============================================================ */
+
+/* --- Tracker Layout --- */
+.tracker-layout {
+  display: flex;
+  gap: var(--space-6);
+  height: calc(100vh - 140px);
+}
+
+/* --- Map Container --- */
+.map-container {
+  flex: 0 0 65%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+}
+
+.map-container canvas,
+.map-container .map-frame,
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Shipment List --- */
+.shipment-list {
+  flex: 0 0 35%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* --- Search Filter Bar --- */
+.search-filter-bar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  gap: var(--space-3);
+  padding-bottom: var(--space-4);
+  background: var(--bg-primary);
+}
+
+.search-filter-bar .form-input {
+  flex: 1;
+}
+
+.search-filter-bar .form-select {
+  flex: 0 0 140px;
+}
+
+/* --- Shipment List Items --- */
+.shipment-list-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid var(--text-muted);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.shipment-list-item:hover {
+  background: var(--accent-blue-glow);
+  border-left-color: var(--accent-blue);
+}
+
+.shipment-list-item.active {
+  background: var(--accent-blue-glow);
+  border-left-color: var(--accent-blue);
+  box-shadow: var(--shadow-sm);
+}
+
+.shipment-list-item.status-on-time { border-left-color: var(--accent-emerald); }
+.shipment-list-item.status-delayed { border-left-color: var(--accent-amber); }
+.shipment-list-item.status-at-risk { border-left-color: var(--accent-rose); }
+
+.shipment-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+}
+
+.shipment-id {
+  font-size: var(--font-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.shipment-route {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.shipment-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+}
+
+/* --- Shipment Detail Panel --- */
+.shipment-detail-panel {
+  position: fixed;
+  top: 64px;
+  right: 0;
+  width: 420px;
+  height: calc(100vh - 64px);
+  background: var(--bg-surface);
+  border-left: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-dropdown);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  overflow-y: auto;
+  padding: var(--space-6);
+}
+
+.shipment-detail-panel.open {
+  transform: translateX(0);
+}
+
+.detail-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+/* --- Timeline --- */
+.timeline {
+  position: relative;
+  padding-left: var(--space-8);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border-subtle);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--space-6);
+  padding-left: var(--space-4);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-8) + 4px);
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 3px solid var(--text-muted);
+  z-index: 1;
+}
+
+.timeline-item.completed::before {
+  background: var(--accent-emerald);
+  border-color: var(--accent-emerald);
+}
+
+.timeline-item.active::before {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 4px var(--accent-blue-glow);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.timeline-item.pending::before {
+  background: var(--bg-secondary);
+  border-color: var(--text-muted);
+}
+
+.timeline-title {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.timeline-time {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+}
+
+.timeline-desc {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+  margin-top: var(--space-1);
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .tracker-layout {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .map-container {
+    flex: none;
+    height: 400px;
+  }
+
+  .shipment-list {
+    flex: none;
+    height: auto;
+    max-height: 500px;
+  }
+
+  .shipment-detail-panel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 300px;
+    border-radius: var(--radius-md);
+  }
+
+  .search-filter-bar {
+    flex-direction: column;
+  }
+
+  .search-filter-bar .form-select {
+    flex: none;
+  }
+}

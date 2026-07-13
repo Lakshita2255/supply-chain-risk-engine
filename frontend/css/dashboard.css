@@ -1,0 +1,168 @@
+/* ============================================================
+   DASHBOARD.CSS — Dashboard Page
+   Supply Chain Risk Prediction Engine
+   ============================================================ */
+
+/* --- Dashboard Grid Layout --- */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.dashboard-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+/* --- Chart Cards --- */
+.chart-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  transition: box-shadow var(--transition-normal);
+}
+
+.chart-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+}
+
+.chart-title {
+  font-size: var(--font-md);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.chart-toggle-group {
+  display: flex;
+  gap: 2px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+}
+
+.chart-toggle-btn {
+  padding: 4px 12px;
+  font-size: var(--font-xs);
+  font-weight: 600;
+  color: var(--text-muted);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.chart-toggle-btn.active,
+.chart-toggle-btn:hover {
+  background: var(--accent-blue);
+  color: #ffffff;
+}
+
+.chart-canvas-container {
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+}
+
+.chart-canvas-container canvas {
+  width: 100% !important;
+}
+
+/* --- Recent Shipments --- */
+.recent-shipments {
+  grid-column: 1 / -1;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.recent-shipments .card-header {
+  padding: var(--space-5) var(--space-6);
+  margin-bottom: 0;
+}
+
+/* --- Status Dot --- */
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: var(--space-2);
+  vertical-align: middle;
+}
+
+.status-dot.active    { background: var(--accent-emerald); box-shadow: 0 0 6px var(--accent-emerald-glow); }
+.status-dot.transit   { background: var(--accent-blue); box-shadow: 0 0 6px var(--accent-blue-glow); }
+.status-dot.delayed   { background: var(--accent-amber); box-shadow: 0 0 6px var(--accent-amber-glow); }
+.status-dot.critical  { background: var(--accent-rose); box-shadow: 0 0 6px var(--accent-rose-glow); animation: pulse 2s ease-in-out infinite; }
+
+/* --- Mini Map Container --- */
+.mini-map-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+}
+
+.mini-map-container canvas,
+.mini-map-container .map-frame {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+}
+
+/* --- Dashboard Page Header --- */
+.dashboard-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.dashboard-page-title {
+  font-size: var(--font-2xl);
+  font-weight: 800;
+}
+
+.dashboard-meta {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1200px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+}

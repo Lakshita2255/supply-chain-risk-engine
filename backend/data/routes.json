@@ -1,0 +1,222 @@
+[
+  {
+    "id": "ROUTE-001",
+    "origin": { "city": "Shanghai", "country": "China", "lat": 31.2304, "lon": 121.4737 },
+    "destination": { "city": "Los Angeles", "country": "United States", "lat": 33.9425, "lon": -118.4081 },
+    "distance_km": 10463,
+    "typical_transit_days": 14,
+    "route_type": "sea",
+    "risk_factors": ["port_congestion", "typhoon_belt", "customs_delay"],
+    "avg_delay_hours": 18.5,
+    "reliability_score": 78
+  },
+  {
+    "id": "ROUTE-002",
+    "origin": { "city": "Rotterdam", "country": "Netherlands", "lat": 51.9225, "lon": 4.4792 },
+    "destination": { "city": "New York", "country": "United States", "lat": 40.7128, "lon": -74.0060 },
+    "distance_km": 5836,
+    "typical_transit_days": 10,
+    "route_type": "sea",
+    "risk_factors": ["extreme_weather"],
+    "avg_delay_hours": 8.2,
+    "reliability_score": 85
+  },
+  {
+    "id": "ROUTE-003",
+    "origin": { "city": "Mumbai", "country": "India", "lat": 19.0760, "lon": 72.8777 },
+    "destination": { "city": "Dubai", "country": "United Arab Emirates", "lat": 25.2048, "lon": 55.2708 },
+    "distance_km": 1923,
+    "typical_transit_days": 3,
+    "route_type": "sea",
+    "risk_factors": ["piracy_zone", "extreme_weather"],
+    "avg_delay_hours": 10.4,
+    "reliability_score": 82
+  },
+  {
+    "id": "ROUTE-004",
+    "origin": { "city": "Singapore", "country": "Singapore", "lat": 1.3521, "lon": 103.8198 },
+    "destination": { "city": "Sydney", "country": "Australia", "lat": -33.8688, "lon": 151.2093 },
+    "distance_km": 6302,
+    "typical_transit_days": 10,
+    "route_type": "sea",
+    "risk_factors": ["extreme_weather"],
+    "avg_delay_hours": 6.8,
+    "reliability_score": 88
+  },
+  {
+    "id": "ROUTE-005",
+    "origin": { "city": "Hamburg", "country": "Germany", "lat": 53.5511, "lon": 9.9937 },
+    "destination": { "city": "Shanghai", "country": "China", "lat": 31.2304, "lon": 121.4737 },
+    "distance_km": 19540,
+    "typical_transit_days": 28,
+    "route_type": "sea",
+    "risk_factors": ["piracy_zone", "port_congestion", "narrow_strait"],
+    "avg_delay_hours": 26.3,
+    "reliability_score": 74
+  },
+  {
+    "id": "ROUTE-006",
+    "origin": { "city": "Santos", "country": "Brazil", "lat": -23.9608, "lon": -46.3336 },
+    "destination": { "city": "Rotterdam", "country": "Netherlands", "lat": 51.9225, "lon": 4.4792 },
+    "distance_km": 9616,
+    "typical_transit_days": 18,
+    "route_type": "sea",
+    "risk_factors": ["customs_delay", "port_congestion", "labor_disputes"],
+    "avg_delay_hours": 28.7,
+    "reliability_score": 72
+  },
+  {
+    "id": "ROUTE-007",
+    "origin": { "city": "Busan", "country": "South Korea", "lat": 35.1796, "lon": 129.0756 },
+    "destination": { "city": "Long Beach", "country": "United States", "lat": 33.7701, "lon": -118.1937 },
+    "distance_km": 9648,
+    "typical_transit_days": 13,
+    "route_type": "sea",
+    "risk_factors": ["typhoon_belt", "port_congestion"],
+    "avg_delay_hours": 12.1,
+    "reliability_score": 81
+  },
+  {
+    "id": "ROUTE-008",
+    "origin": { "city": "Dubai", "country": "United Arab Emirates", "lat": 25.2048, "lon": 55.2708 },
+    "destination": { "city": "London", "country": "United Kingdom", "lat": 51.5074, "lon": -0.1278 },
+    "distance_km": 5488,
+    "typical_transit_days": 1,
+    "route_type": "air",
+    "risk_factors": ["customs_delay"],
+    "avg_delay_hours": 3.2,
+    "reliability_score": 92
+  },
+  {
+    "id": "ROUTE-009",
+    "origin": { "city": "Tokyo", "country": "Japan", "lat": 35.6762, "lon": 139.6503 },
+    "destination": { "city": "Vancouver", "country": "Canada", "lat": 49.2827, "lon": -123.1207 },
+    "distance_km": 7562,
+    "typical_transit_days": 11,
+    "route_type": "sea",
+    "risk_factors": ["typhoon_belt", "extreme_weather"],
+    "avg_delay_hours": 11.0,
+    "reliability_score": 83
+  },
+  {
+    "id": "ROUTE-010",
+    "origin": { "city": "Lagos", "country": "Nigeria", "lat": 6.5244, "lon": 3.3792 },
+    "destination": { "city": "Amsterdam", "country": "Netherlands", "lat": 52.3676, "lon": 4.9041 },
+    "distance_km": 6588,
+    "typical_transit_days": 16,
+    "route_type": "sea",
+    "risk_factors": ["piracy_zone", "political_instability", "port_congestion", "customs_delay"],
+    "avg_delay_hours": 42.6,
+    "reliability_score": 61
+  },
+  {
+    "id": "ROUTE-011",
+    "origin": { "city": "Cape Town", "country": "South Africa", "lat": -33.9249, "lon": 18.4241 },
+    "destination": { "city": "Mumbai", "country": "India", "lat": 19.0760, "lon": 72.8777 },
+    "distance_km": 8146,
+    "typical_transit_days": 14,
+    "route_type": "sea",
+    "risk_factors": ["extreme_weather", "piracy_zone"],
+    "avg_delay_hours": 20.5,
+    "reliability_score": 75
+  },
+  {
+    "id": "ROUTE-012",
+    "origin": { "city": "Guangzhou", "country": "China", "lat": 23.1291, "lon": 113.2644 },
+    "destination": { "city": "Hamburg", "country": "Germany", "lat": 53.5511, "lon": 9.9937 },
+    "distance_km": 18120,
+    "typical_transit_days": 26,
+    "route_type": "sea",
+    "risk_factors": ["piracy_zone", "narrow_strait", "port_congestion"],
+    "avg_delay_hours": 27.4,
+    "reliability_score": 73
+  },
+  {
+    "id": "ROUTE-013",
+    "origin": { "city": "Ho Chi Minh City", "country": "Vietnam", "lat": 10.8231, "lon": 106.6297 },
+    "destination": { "city": "Yokohama", "country": "Japan", "lat": 35.4437, "lon": 139.6380 },
+    "distance_km": 4210,
+    "typical_transit_days": 7,
+    "route_type": "sea",
+    "risk_factors": ["typhoon_belt"],
+    "avg_delay_hours": 9.3,
+    "reliability_score": 84
+  },
+  {
+    "id": "ROUTE-014",
+    "origin": { "city": "Jeddah", "country": "Saudi Arabia", "lat": 21.2854, "lon": 39.2376 },
+    "destination": { "city": "Singapore", "country": "Singapore", "lat": 1.3521, "lon": 103.8198 },
+    "distance_km": 7234,
+    "typical_transit_days": 12,
+    "route_type": "sea",
+    "risk_factors": ["piracy_zone", "narrow_strait"],
+    "avg_delay_hours": 16.8,
+    "reliability_score": 77
+  },
+  {
+    "id": "ROUTE-015",
+    "origin": { "city": "Piraeus", "country": "Greece", "lat": 37.9422, "lon": 23.6463 },
+    "destination": { "city": "Istanbul", "country": "Turkey", "lat": 41.0082, "lon": 28.9784 },
+    "distance_km": 612,
+    "typical_transit_days": 2,
+    "route_type": "sea",
+    "risk_factors": ["narrow_strait"],
+    "avg_delay_hours": 4.1,
+    "reliability_score": 90
+  },
+  {
+    "id": "ROUTE-016",
+    "origin": { "city": "Felixstowe", "country": "United Kingdom", "lat": 51.9615, "lon": 1.3510 },
+    "destination": { "city": "New York", "country": "United States", "lat": 40.7128, "lon": -74.0060 },
+    "distance_km": 5516,
+    "typical_transit_days": 9,
+    "route_type": "sea",
+    "risk_factors": ["extreme_weather", "labor_disputes"],
+    "avg_delay_hours": 7.6,
+    "reliability_score": 86
+  },
+  {
+    "id": "ROUTE-017",
+    "origin": { "city": "Colombo", "country": "Sri Lanka", "lat": 6.9271, "lon": 79.8612 },
+    "destination": { "city": "Melbourne", "country": "Australia", "lat": -37.8136, "lon": 144.9631 },
+    "distance_km": 8432,
+    "typical_transit_days": 13,
+    "route_type": "sea",
+    "risk_factors": ["extreme_weather"],
+    "avg_delay_hours": 10.8,
+    "reliability_score": 82
+  },
+  {
+    "id": "ROUTE-018",
+    "origin": { "city": "Mombasa", "country": "Kenya", "lat": -4.0435, "lon": 39.6682 },
+    "destination": { "city": "Jeddah", "country": "Saudi Arabia", "lat": 21.2854, "lon": 39.2376 },
+    "distance_km": 2812,
+    "typical_transit_days": 5,
+    "route_type": "sea",
+    "risk_factors": ["piracy_zone", "political_instability"],
+    "avg_delay_hours": 34.2,
+    "reliability_score": 68
+  },
+  {
+    "id": "ROUTE-019",
+    "origin": { "city": "Callao", "country": "Peru", "lat": -12.0564, "lon": -77.1185 },
+    "destination": { "city": "Shanghai", "country": "China", "lat": 31.2304, "lon": 121.4737 },
+    "distance_km": 17240,
+    "typical_transit_days": 25,
+    "route_type": "sea",
+    "risk_factors": ["extreme_weather", "port_congestion"],
+    "avg_delay_hours": 30.5,
+    "reliability_score": 70
+  },
+  {
+    "id": "ROUTE-020",
+    "origin": { "city": "Antwerp", "country": "Belgium", "lat": 51.2194, "lon": 4.4025 },
+    "destination": { "city": "Casablanca", "country": "Morocco", "lat": 33.5731, "lon": -7.5898 },
+    "distance_km": 2387,
+    "typical_transit_days": 4,
+    "route_type": "sea",
+    "risk_factors": ["customs_delay"],
+    "avg_delay_hours": 6.5,
+    "reliability_score": 87
+  }
+]

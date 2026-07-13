@@ -1,0 +1,281 @@
+/* ============================================================
+   REPORTS.CSS — Reports Page
+   Supply Chain Risk Prediction Engine
+   ============================================================ */
+
+/* --- Reports Layout --- */
+.reports-layout {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+/* --- Report Configuration Panel --- */
+.report-config {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.report-config-title {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+}
+
+.report-config-section {
+  margin-bottom: var(--space-6);
+}
+
+.report-config-section-label {
+  font-size: var(--font-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+/* --- Report Type Selector Grid --- */
+.report-type-selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+}
+
+.report-type-card {
+  background: var(--bg-surface);
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+  position: relative;
+}
+
+.report-type-card:hover {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-glow);
+}
+
+.report-type-card.active {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-glow);
+}
+
+.report-type-card.active::after {
+  content: '✓';
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.report-type-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto var(--space-3);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-blue-glow);
+  color: var(--accent-blue);
+  font-size: 1.1rem;
+}
+
+.report-type-name {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* --- Date Range Picker --- */
+.date-range-picker {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.date-range-picker .form-input {
+  flex: 1;
+}
+
+.date-range-separator {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* --- Report Preview --- */
+.report-preview {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.report-preview-header {
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+}
+
+.report-preview-title {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.report-preview-meta {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+}
+
+.report-preview-body {
+  flex: 1;
+  padding: var(--space-6);
+  overflow-y: auto;
+}
+
+.report-preview-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-muted);
+  text-align: center;
+  padding: var(--space-8);
+}
+
+.report-preview-placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-4);
+  opacity: 0.4;
+}
+
+.report-preview-placeholder-text {
+  font-size: var(--font-sm);
+  line-height: 1.6;
+}
+
+/* --- Export Bar --- */
+.export-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-6);
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+}
+
+/* --- Report History List --- */
+.history-section {
+  margin-top: var(--space-8);
+}
+
+.history-section-title {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.history-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.history-item:hover {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-glow);
+}
+
+.history-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.history-item-name {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.history-item-meta {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+  display: flex;
+  gap: var(--space-4);
+}
+
+.history-item-actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .reports-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .report-preview {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .report-type-selector {
+    grid-template-columns: 1fr;
+  }
+
+  .date-range-picker {
+    flex-direction: column;
+  }
+
+  .export-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .history-item {
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: flex-start;
+  }
+
+  .history-item-actions {
+    width: 100%;
+  }
+}

@@ -1,0 +1,301 @@
+shipment_id,route_id,origin,destination,cargo_type,weight_kg,distance_km,weather_severity,traffic_congestion,supplier_reliability,port_congestion,customs_complexity,route_risk_score,month,day_of_week,is_peak_season,delay_hours,is_delayed
+HST-000001,ROUTE-004,Singapore,Sydney,Electronics,49098,6302,1,0.12,0.87,0.38,3,29,5,1,0,5.9,1
+HST-000002,ROUTE-020,Antwerp,Casablanca,Electronics,37281,2387,3,0.34,0.72,0.22,4,56,4,5,0,0.6,0
+HST-000003,ROUTE-014,Jeddah,Singapore,Machinery,18710,7234,1,0.32,0.68,0.26,2,36,3,1,0,15.0,1
+HST-000004,ROUTE-013,Ho Chi Minh City,Yokohama,Automotive Parts,36678,4210,3,0.65,0.79,0.47,1,55,5,6,0,4.7,1
+HST-000005,ROUTE-008,Dubai,London,Automotive Parts,25411,5488,4,0.16,0.68,0.45,4,55,5,3,0,0.3,0
+HST-000006,ROUTE-006,Santos,Rotterdam,Raw Materials,48284,9616,2,0.74,0.82,0.66,3,84,4,1,0,3.1,0
+HST-000007,ROUTE-008,Dubai,London,Electronics,21173,5488,1,0.71,0.94,0.24,3,19,7,2,0,3.7,0
+HST-000008,ROUTE-015,Piraeus,Istanbul,Pharmaceuticals,17859,612,2,0.57,0.71,0.4,2,50,3,1,0,0.6,0
+HST-000009,ROUTE-016,Felixstowe,New York,Automotive Parts,3587,5516,1,0.53,0.8,0.28,3,55,2,1,0,1.0,0
+HST-000010,ROUTE-018,Mombasa,Jeddah,Electronics,45083,2812,4,0.84,0.67,0.23,2,89,12,0,1,92.2,1
+HST-000011,ROUTE-006,Santos,Rotterdam,Raw Materials,7473,9616,4,0.41,0.88,0.65,4,87,11,2,1,7.4,1
+HST-000012,ROUTE-012,Guangzhou,Hamburg,Food & Perishables,16192,18120,4,0.11,0.74,0.34,4,51,1,1,0,0.5,0
+HST-000013,ROUTE-016,Felixstowe,New York,Raw Materials,11321,5516,2,0.2,0.77,0.49,2,53,5,4,0,134.4,1
+HST-000014,ROUTE-015,Piraeus,Istanbul,Raw Materials,30088,612,1,0.06,0.78,0.4,1,29,2,1,0,0.2,0
+HST-000015,ROUTE-003,Mumbai,Dubai,Electronics,22154,1923,2,0.39,0.77,0.48,4,30,2,4,0,1.0,0
+HST-000016,ROUTE-016,Felixstowe,New York,Chemicals,12978,5516,2,0.35,0.73,0.49,3,57,2,0,0,0.4,0
+HST-000017,ROUTE-013,Ho Chi Minh City,Yokohama,Machinery,7661,4210,2,0.15,0.59,0.33,4,27,4,1,0,66.8,1
+HST-000018,ROUTE-004,Singapore,Sydney,Electronics,43238,6302,5,0.7,0.92,0.15,3,15,9,6,0,16.8,1
+HST-000019,ROUTE-013,Ho Chi Minh City,Yokohama,Food & Perishables,30319,4210,5,0.75,0.78,0.48,2,59,5,3,0,168.0,1
+HST-000020,ROUTE-011,Cape Town,Mumbai,Electronics,3786,8146,5,0.67,0.53,0.35,4,47,10,3,1,13.8,1
+HST-000021,ROUTE-019,Callao,Shanghai,Textiles,38440,17240,3,0.71,0.76,0.91,2,60,10,0,1,7.2,1
+HST-000022,ROUTE-010,Lagos,Amsterdam,Consumer Goods,21220,6588,3,0.44,0.55,0.65,3,84,2,0,0,4.6,1
+HST-000023,ROUTE-008,Dubai,London,Machinery,19176,5488,3,0.48,0.99,0.44,1,49,3,3,0,1.2,0
+HST-000024,ROUTE-004,Singapore,Sydney,Pharmaceuticals,17832,6302,1,0.25,0.61,0.26,3,50,2,0,0,2.0,0
+HST-000025,ROUTE-009,Tokyo,Vancouver,Electronics,6548,7562,1,0.53,0.57,0.64,2,32,11,3,1,56.2,1
+HST-000026,ROUTE-004,Singapore,Sydney,Automotive Parts,45786,6302,4,0.46,0.57,0.13,2,17,3,4,0,3.2,0
+HST-000027,ROUTE-002,Rotterdam,New York,Machinery,14267,5836,2,0.85,0.94,0.29,3,57,11,1,1,155.0,1
+HST-000028,ROUTE-006,Santos,Rotterdam,Chemicals,2124,9616,3,0.34,0.83,0.78,2,76,3,5,0,49.8,1
+HST-000029,ROUTE-002,Rotterdam,New York,Consumer Goods,15077,5836,2,0.62,0.94,0.18,3,44,4,6,0,1.1,0
+HST-000030,ROUTE-003,Mumbai,Dubai,Food & Perishables,23512,1923,4,0.89,0.67,0.07,4,40,11,4,1,39.7,1
+HST-000031,ROUTE-020,Antwerp,Casablanca,Chemicals,23154,2387,3,0.99,0.56,0.59,2,35,12,6,1,24.5,1
+HST-000032,ROUTE-018,Mombasa,Jeddah,Textiles,24369,2812,3,0.51,0.56,0.59,3,76,7,0,0,1.3,0
+HST-000033,ROUTE-010,Lagos,Amsterdam,Raw Materials,8841,6588,3,0.68,0.81,0.5,3,79,4,3,0,7.5,1
+HST-000034,ROUTE-019,Callao,Shanghai,Furniture,43406,17240,2,0.2,0.74,0.89,4,83,6,3,0,8.2,1
+HST-000035,ROUTE-020,Antwerp,Casablanca,Machinery,6620,2387,1,0.19,0.51,0.2,3,34,4,5,0,0.3,0
+HST-000036,ROUTE-014,Jeddah,Singapore,Furniture,13242,7234,3,0.47,0.83,0.05,4,39,12,5,1,0.4,0
+HST-000037,ROUTE-014,Jeddah,Singapore,Textiles,12026,7234,1,0.47,0.92,0.32,4,44,12,4,1,4.0,0
+HST-000038,ROUTE-020,Antwerp,Casablanca,Machinery,49996,2387,2,0.68,0.72,0.15,4,47,8,4,0,66.2,1
+HST-000039,ROUTE-009,Tokyo,Vancouver,Raw Materials,32258,7562,3,0.8,0.62,0.25,4,32,11,1,1,7.1,1
+HST-000040,ROUTE-005,Hamburg,Shanghai,Textiles,4709,19540,2,0.34,0.6,0.57,5,76,7,3,0,2.8,0
+HST-000041,ROUTE-019,Callao,Shanghai,Chemicals,31759,17240,3,0.65,0.98,0.57,4,74,1,2,0,17.3,1
+HST-000042,ROUTE-008,Dubai,London,Food & Perishables,29062,5488,2,0.53,0.7,0.15,3,39,8,0,0,12.6,1
+HST-000043,ROUTE-013,Ho Chi Minh City,Yokohama,Furniture,37487,4210,4,0.39,0.73,0.08,2,20,11,0,1,12.6,1
+HST-000044,ROUTE-014,Jeddah,Singapore,Food & Perishables,5867,7234,1,0.72,0.61,0.09,5,49,8,0,0,6.1,1
+HST-000045,ROUTE-001,Shanghai,Los Angeles,Furniture,10486,10463,3,0.44,0.61,0.75,4,45,4,1,0,30.0,1
+HST-000046,ROUTE-004,Singapore,Sydney,Pharmaceuticals,20884,6302,4,0.45,0.95,0.28,5,16,2,4,0,38.2,1
+HST-000047,ROUTE-010,Lagos,Amsterdam,Furniture,8433,6588,3,0.6,0.69,0.63,2,57,10,6,1,3.3,0
+HST-000048,ROUTE-004,Singapore,Sydney,Chemicals,24236,6302,4,0.6,0.87,0.63,2,44,11,6,1,2.2,0
+HST-000049,ROUTE-016,Felixstowe,New York,Consumer Goods,29045,5516,3,0.47,0.97,0.22,3,32,12,4,1,2.3,0
+HST-000050,ROUTE-013,Ho Chi Minh City,Yokohama,Machinery,2380,4210,1,0.2,0.9,0.25,4,35,8,6,0,1.1,0
+HST-000051,ROUTE-001,Shanghai,Los Angeles,Raw Materials,13021,10463,2,0.58,0.85,0.72,3,41,2,1,0,0.4,0
+HST-000052,ROUTE-008,Dubai,London,Chemicals,45836,5488,3,0.38,0.77,0.31,4,57,4,2,0,45.8,1
+HST-000053,ROUTE-009,Tokyo,Vancouver,Textiles,8407,7562,2,0.68,0.88,0.16,2,35,12,1,1,71.2,1
+HST-000054,ROUTE-017,Colombo,Melbourne,Furniture,19046,8432,2,0.3,0.65,0.47,1,27,2,6,0,6.4,1
+HST-000055,ROUTE-005,Hamburg,Shanghai,Consumer Goods,7223,19540,2,0.36,0.59,0.33,5,73,1,4,0,50.4,1
+HST-000056,ROUTE-003,Mumbai,Dubai,Furniture,41751,1923,2,0.69,0.65,0.65,1,24,11,0,1,2.4,0
+HST-000057,ROUTE-020,Antwerp,Casablanca,Textiles,34747,2387,2,0.46,0.71,0.39,1,43,7,3,0,0.4,0
+HST-000058,ROUTE-007,Busan,Long Beach,Textiles,17843,9648,2,0.69,0.58,0.3,3,25,11,0,1,6.4,1
+HST-000059,ROUTE-010,Lagos,Amsterdam,Consumer Goods,5164,6588,4,0.74,0.83,0.91,3,71,11,1,1,48.4,1
+HST-000060,ROUTE-003,Mumbai,Dubai,Electronics,11373,1923,4,0.36,0.73,0.23,3,51,5,4,0,30.1,1
+HST-000061,ROUTE-014,Jeddah,Singapore,Machinery,40064,7234,1,0.52,0.93,0.4,1,20,5,0,0,3.3,0
+HST-000062,ROUTE-019,Callao,Shanghai,Electronics,11981,17240,4,0.18,0.79,0.71,3,83,8,4,0,9.2,1
+HST-000063,ROUTE-006,Santos,Rotterdam,Machinery,27477,9616,4,0.58,0.88,0.32,1,73,12,3,1,14.7,1
+HST-000064,ROUTE-001,Shanghai,Los Angeles,Raw Materials,30776,10463,2,0.49,0.75,0.59,1,27,7,0,0,6.4,1
+HST-000065,ROUTE-016,Felixstowe,New York,Automotive Parts,2391,5516,4,0.52,0.51,0.29,2,30,11,4,1,0.5,0
+HST-000066,ROUTE-004,Singapore,Sydney,Pharmaceuticals,33161,6302,4,0.59,0.74,0.33,3,47,12,2,1,12.3,1
+HST-000067,ROUTE-005,Hamburg,Shanghai,Automotive Parts,18604,19540,2,0.05,0.86,0.84,3,87,7,2,0,3.5,0
+HST-000068,ROUTE-015,Piraeus,Istanbul,Raw Materials,32241,612,3,0.31,0.97,0.57,5,50,6,2,0,32.5,1
+HST-000069,ROUTE-014,Jeddah,Singapore,Electronics,21352,7234,5,0.57,0.99,0.53,3,60,12,3,1,125.0,1
+HST-000070,ROUTE-011,Cape Town,Mumbai,Automotive Parts,29355,8146,1,0.15,0.94,0.63,1,44,2,4,0,1.1,0
+HST-000071,ROUTE-020,Antwerp,Casablanca,Chemicals,43087,2387,4,0.65,0.69,0.24,4,36,2,6,0,3.5,0
+HST-000072,ROUTE-002,Rotterdam,New York,Furniture,4984,5836,4,0.75,0.87,0.31,1,58,4,5,0,3.5,0
+HST-000073,ROUTE-015,Piraeus,Istanbul,Pharmaceuticals,45982,612,2,0.09,0.68,0.31,2,17,5,0,0,2.7,0
+HST-000074,ROUTE-006,Santos,Rotterdam,Pharmaceuticals,11973,9616,3,0.22,0.96,0.39,3,79,2,4,0,4.2,1
+HST-000075,ROUTE-015,Piraeus,Istanbul,Food & Perishables,44907,612,2,0.29,0.79,0.43,3,19,9,1,0,43.2,1
+HST-000076,ROUTE-013,Ho Chi Minh City,Yokohama,Consumer Goods,7489,4210,2,0.26,0.85,0.06,4,51,4,3,0,0.0,0
+HST-000077,ROUTE-002,Rotterdam,New York,Furniture,49335,5836,3,0.21,0.9,0.18,2,33,8,6,0,63.6,1
+HST-000078,ROUTE-005,Hamburg,Shanghai,Automotive Parts,41621,19540,4,0.32,0.68,0.39,5,74,11,0,1,23.8,1
+HST-000079,ROUTE-012,Guangzhou,Hamburg,Raw Materials,33385,18120,2,0.63,0.74,0.82,4,25,5,6,0,11.7,1
+HST-000080,ROUTE-005,Hamburg,Shanghai,Textiles,44823,19540,5,0.86,0.68,0.81,1,80,12,5,1,38.5,1
+HST-000081,ROUTE-019,Callao,Shanghai,Chemicals,42347,17240,2,0.48,0.97,0.51,3,69,6,0,0,2.5,0
+HST-000082,ROUTE-015,Piraeus,Istanbul,Food & Perishables,43048,612,1,0.08,1.0,0.12,2,23,7,0,0,1.6,0
+HST-000083,ROUTE-012,Guangzhou,Hamburg,Raw Materials,27967,18120,5,0.76,0.92,0.7,5,24,10,5,1,22.0,1
+HST-000084,ROUTE-008,Dubai,London,Machinery,7011,5488,5,0.75,0.53,0.22,5,49,11,2,1,3.3,0
+HST-000085,ROUTE-003,Mumbai,Dubai,Textiles,42554,1923,1,0.53,0.99,0.52,2,16,11,4,1,2.2,0
+HST-000086,ROUTE-019,Callao,Shanghai,Textiles,15769,17240,3,0.47,0.64,0.94,5,64,6,6,0,40.0,1
+HST-000087,ROUTE-001,Shanghai,Los Angeles,Pharmaceuticals,1473,10463,3,0.06,0.63,0.38,3,30,6,6,0,7.6,1
+HST-000088,ROUTE-012,Guangzhou,Hamburg,Raw Materials,39406,18120,1,0.48,0.86,0.89,3,47,2,3,0,12.7,1
+HST-000089,ROUTE-016,Felixstowe,New York,Chemicals,28436,5516,4,0.61,0.95,0.24,1,46,11,0,1,36.0,1
+HST-000090,ROUTE-013,Ho Chi Minh City,Yokohama,Furniture,35270,4210,3,0.12,0.85,0.56,3,47,5,3,0,2.9,0
+HST-000091,ROUTE-007,Busan,Long Beach,Chemicals,30093,9648,4,0.33,0.86,0.24,2,36,4,3,0,177.9,1
+HST-000092,ROUTE-003,Mumbai,Dubai,Automotive Parts,6609,1923,4,0.44,0.79,0.39,2,38,7,0,0,39.2,1
+HST-000093,ROUTE-002,Rotterdam,New York,Food & Perishables,39848,5836,3,0.2,0.83,0.18,1,21,5,2,0,1.5,0
+HST-000094,ROUTE-009,Tokyo,Vancouver,Furniture,15321,7562,5,0.62,0.81,0.44,1,50,7,6,0,3.3,0
+HST-000095,ROUTE-009,Tokyo,Vancouver,Electronics,12323,7562,4,0.3,0.59,0.14,3,34,5,5,0,80.7,1
+HST-000096,ROUTE-017,Colombo,Melbourne,Textiles,25154,8432,1,0.27,0.66,0.61,3,36,7,3,0,0.6,0
+HST-000097,ROUTE-020,Antwerp,Casablanca,Electronics,44669,2387,3,0.39,0.72,0.21,4,43,2,2,0,18.8,1
+HST-000098,ROUTE-019,Callao,Shanghai,Consumer Goods,35033,17240,2,0.99,0.53,0.43,5,57,11,2,1,46.4,1
+HST-000099,ROUTE-004,Singapore,Sydney,Electronics,33096,6302,2,0.67,0.62,0.39,3,26,12,3,1,29.8,1
+HST-000100,ROUTE-014,Jeddah,Singapore,Electronics,30630,7234,3,0.45,0.85,0.3,1,35,2,6,0,10.4,1
+HST-000101,ROUTE-020,Antwerp,Casablanca,Consumer Goods,45694,2387,4,0.22,0.79,0.36,2,42,6,0,0,7.8,1
+HST-000102,ROUTE-017,Colombo,Melbourne,Automotive Parts,35273,8432,2,0.72,0.82,0.14,1,37,9,1,0,5.3,1
+HST-000103,ROUTE-003,Mumbai,Dubai,Pharmaceuticals,41653,1923,3,0.36,0.96,0.39,3,51,8,3,0,3.5,0
+HST-000104,ROUTE-011,Cape Town,Mumbai,Pharmaceuticals,29320,8146,3,0.61,0.8,0.26,1,43,2,3,0,7.0,1
+HST-000105,ROUTE-010,Lagos,Amsterdam,Automotive Parts,42748,6588,2,0.46,0.98,0.78,1,87,2,4,0,2.3,0
+HST-000106,ROUTE-007,Busan,Long Beach,Machinery,40149,9648,5,0.37,0.91,0.55,5,24,8,4,0,17.8,1
+HST-000107,ROUTE-015,Piraeus,Istanbul,Raw Materials,34758,612,3,0.5,0.7,0.25,3,38,10,1,1,2.6,0
+HST-000108,ROUTE-003,Mumbai,Dubai,Machinery,6693,1923,2,0.56,0.83,0.59,4,39,9,5,0,15.4,1
+HST-000109,ROUTE-012,Guangzhou,Hamburg,Food & Perishables,43495,18120,2,0.8,0.54,0.66,3,40,12,5,1,9.7,1
+HST-000110,ROUTE-017,Colombo,Melbourne,Automotive Parts,42837,8432,3,0.55,0.59,0.18,5,47,11,3,1,5.2,1
+HST-000111,ROUTE-003,Mumbai,Dubai,Food & Perishables,7128,1923,4,0.67,0.52,0.25,4,49,9,6,0,22.8,1
+HST-000112,ROUTE-020,Antwerp,Casablanca,Pharmaceuticals,47763,2387,2,0.55,0.98,0.42,4,41,8,0,0,0.9,0
+HST-000113,ROUTE-008,Dubai,London,Food & Perishables,31237,5488,4,0.74,0.73,0.22,2,58,4,2,0,213.6,1
+HST-000114,ROUTE-005,Hamburg,Shanghai,Food & Perishables,3919,19540,4,0.37,0.92,0.85,2,78,11,3,1,13.1,1
+HST-000115,ROUTE-014,Jeddah,Singapore,Automotive Parts,15051,7234,2,0.33,0.69,0.28,1,16,8,2,0,4.9,1
+HST-000116,ROUTE-011,Cape Town,Mumbai,Pharmaceuticals,9517,8146,3,0.15,0.85,0.32,1,45,1,2,0,10.7,1
+HST-000117,ROUTE-018,Mombasa,Jeddah,Furniture,35088,2812,1,0.14,0.62,0.43,3,73,7,0,0,54.0,1
+HST-000118,ROUTE-018,Mombasa,Jeddah,Electronics,41915,2812,3,0.25,0.5,0.26,3,70,9,4,0,24.6,1
+HST-000119,ROUTE-012,Guangzhou,Hamburg,Automotive Parts,34975,18120,3,0.32,0.74,0.71,5,47,9,4,0,10.3,1
+HST-000120,ROUTE-012,Guangzhou,Hamburg,Textiles,48534,18120,4,0.81,0.67,0.33,3,21,11,5,1,0.7,0
+HST-000121,ROUTE-015,Piraeus,Istanbul,Consumer Goods,41901,612,1,0.59,0.73,0.23,1,23,3,6,0,11.5,1
+HST-000122,ROUTE-017,Colombo,Melbourne,Chemicals,36088,8432,3,0.18,0.68,0.52,4,17,8,2,0,7.0,1
+HST-000123,ROUTE-013,Ho Chi Minh City,Yokohama,Consumer Goods,25839,4210,3,0.31,0.9,0.21,1,46,6,1,0,1.7,0
+HST-000124,ROUTE-006,Santos,Rotterdam,Raw Materials,19752,9616,2,0.26,0.72,0.77,2,60,6,0,0,29.4,1
+HST-000125,ROUTE-012,Guangzhou,Hamburg,Furniture,29004,18120,1,0.5,0.68,0.82,3,18,5,5,0,0.6,0
+HST-000126,ROUTE-020,Antwerp,Casablanca,Consumer Goods,2780,2387,3,0.31,0.69,0.39,3,30,3,0,0,3.8,0
+HST-000127,ROUTE-012,Guangzhou,Hamburg,Consumer Goods,5538,18120,3,0.52,0.64,0.92,1,48,10,1,1,33.9,1
+HST-000128,ROUTE-004,Singapore,Sydney,Food & Perishables,17558,6302,5,0.5,0.96,0.34,1,28,12,3,1,1.8,0
+HST-000129,ROUTE-015,Piraeus,Istanbul,Automotive Parts,45190,612,3,0.43,0.65,0.23,2,37,6,5,0,2.8,0
+HST-000130,ROUTE-006,Santos,Rotterdam,Machinery,33841,9616,3,0.22,0.75,0.53,3,67,4,0,0,84.5,1
+HST-000131,ROUTE-003,Mumbai,Dubai,Automotive Parts,20769,1923,2,0.59,0.91,0.09,5,45,7,5,0,1.8,0
+HST-000132,ROUTE-017,Colombo,Melbourne,Machinery,8910,8432,1,0.73,0.72,0.6,1,52,9,5,0,5.4,1
+HST-000133,ROUTE-011,Cape Town,Mumbai,Textiles,23176,8146,2,0.49,0.78,0.13,2,20,9,2,0,2.0,0
+HST-000134,ROUTE-006,Santos,Rotterdam,Furniture,38553,9616,4,0.44,0.91,0.32,1,76,3,1,0,38.8,1
+HST-000135,ROUTE-014,Jeddah,Singapore,Furniture,42376,7234,2,0.5,0.65,0.2,4,55,1,3,0,28.5,1
+HST-000136,ROUTE-006,Santos,Rotterdam,Consumer Goods,27738,9616,2,0.15,0.93,0.51,5,68,8,3,0,30.3,1
+HST-000137,ROUTE-017,Colombo,Melbourne,Raw Materials,7458,8432,1,0.36,0.57,0.08,5,44,6,1,0,1.7,0
+HST-000138,ROUTE-006,Santos,Rotterdam,Machinery,38359,9616,4,0.65,0.76,0.62,2,67,12,2,1,179.1,1
+HST-000139,ROUTE-007,Busan,Long Beach,Furniture,23627,9648,2,0.67,0.83,0.33,3,33,1,0,0,1.7,0
+HST-000140,ROUTE-009,Tokyo,Vancouver,Machinery,26927,7562,1,0.44,0.68,0.22,2,40,6,0,0,2.2,0
+HST-000141,ROUTE-020,Antwerp,Casablanca,Furniture,8286,2387,2,0.74,0.78,0.27,1,40,3,0,0,1.6,0
+HST-000142,ROUTE-002,Rotterdam,New York,Electronics,3050,5836,4,0.41,0.57,0.59,1,36,3,5,0,1.3,0
+HST-000143,ROUTE-013,Ho Chi Minh City,Yokohama,Furniture,48952,4210,2,0.41,0.74,0.39,3,36,5,4,0,5.0,1
+HST-000144,ROUTE-014,Jeddah,Singapore,Furniture,20663,7234,4,0.72,0.63,0.44,5,59,12,6,1,5.8,1
+HST-000145,ROUTE-017,Colombo,Melbourne,Furniture,25416,8432,1,0.45,0.85,0.16,3,58,3,6,0,1.7,0
+HST-000146,ROUTE-007,Busan,Long Beach,Chemicals,33387,9648,4,0.66,0.78,0.65,3,18,10,3,1,152.5,1
+HST-000147,ROUTE-018,Mombasa,Jeddah,Machinery,44793,2812,4,0.43,0.62,0.38,2,71,12,5,1,1.2,0
+HST-000148,ROUTE-010,Lagos,Amsterdam,Textiles,45735,6588,3,0.69,0.97,0.77,2,75,12,3,1,33.5,1
+HST-000149,ROUTE-013,Ho Chi Minh City,Yokohama,Machinery,10099,4210,5,0.11,0.96,0.44,4,33,5,0,0,60.7,1
+HST-000150,ROUTE-009,Tokyo,Vancouver,Pharmaceuticals,7658,7562,2,0.34,0.95,0.19,2,52,10,5,1,7.8,1
+HST-000151,ROUTE-005,Hamburg,Shanghai,Electronics,36567,19540,2,0.19,0.98,0.51,3,85,3,3,0,0.4,0
+HST-000152,ROUTE-019,Callao,Shanghai,Textiles,35571,17240,5,0.42,0.94,0.41,5,57,12,5,1,1.6,0
+HST-000153,ROUTE-016,Felixstowe,New York,Pharmaceuticals,49586,5516,2,0.47,0.96,0.25,3,15,5,0,0,2.1,0
+HST-000154,ROUTE-005,Hamburg,Shanghai,Raw Materials,31172,19540,2,0.56,0.82,0.77,1,62,5,1,0,9.4,1
+HST-000155,ROUTE-007,Busan,Long Beach,Pharmaceuticals,40539,9648,4,0.36,0.83,0.16,1,42,11,3,1,7.4,1
+HST-000156,ROUTE-009,Tokyo,Vancouver,Machinery,20288,7562,1,0.76,0.85,0.09,1,51,10,5,1,24.1,1
+HST-000157,ROUTE-010,Lagos,Amsterdam,Automotive Parts,42358,6588,1,0.14,0.58,0.79,3,69,5,2,0,23.3,1
+HST-000158,ROUTE-018,Mombasa,Jeddah,Textiles,16717,2812,4,0.67,0.68,0.6,1,60,11,6,1,120.2,1
+HST-000159,ROUTE-006,Santos,Rotterdam,Machinery,34601,9616,3,0.39,0.95,0.59,1,68,8,0,0,25.5,1
+HST-000160,ROUTE-018,Mombasa,Jeddah,Consumer Goods,44590,2812,2,0.62,0.87,0.4,1,56,5,5,0,12.0,1
+HST-000161,ROUTE-003,Mumbai,Dubai,Consumer Goods,2579,1923,3,0.59,0.99,0.44,3,26,5,3,0,1.5,0
+HST-000162,ROUTE-013,Ho Chi Minh City,Yokohama,Chemicals,5759,4210,2,0.9,0.56,0.65,2,49,11,5,1,152.1,1
+HST-000163,ROUTE-001,Shanghai,Los Angeles,Food & Perishables,30843,10463,3,0.57,0.61,0.6,2,49,11,5,1,63.6,1
+HST-000164,ROUTE-002,Rotterdam,New York,Chemicals,40799,5836,1,0.47,0.72,0.45,4,28,1,1,0,7.6,1
+HST-000165,ROUTE-018,Mombasa,Jeddah,Textiles,49939,2812,5,0.21,0.96,0.4,3,87,1,1,0,3.3,0
+HST-000166,ROUTE-008,Dubai,London,Food & Perishables,9888,5488,3,0.49,0.78,0.41,4,29,11,4,1,25.3,1
+HST-000167,ROUTE-002,Rotterdam,New York,Machinery,42660,5836,3,0.59,0.57,0.28,4,48,11,3,1,46.8,1
+HST-000168,ROUTE-005,Hamburg,Shanghai,Consumer Goods,4276,19540,3,0.14,0.62,0.43,3,81,9,3,0,3.4,0
+HST-000169,ROUTE-003,Mumbai,Dubai,Raw Materials,47986,1923,2,0.47,0.52,0.09,4,32,4,0,0,2.7,0
+HST-000170,ROUTE-007,Busan,Long Beach,Consumer Goods,14189,9648,1,0.18,0.87,0.5,4,15,6,2,0,2.8,0
+HST-000171,ROUTE-007,Busan,Long Beach,Chemicals,16184,9648,2,0.42,0.68,0.21,3,33,9,2,0,0.4,0
+HST-000172,ROUTE-016,Felixstowe,New York,Machinery,13812,5516,1,0.65,0.87,0.06,3,41,6,2,0,2.9,0
+HST-000173,ROUTE-010,Lagos,Amsterdam,Pharmaceuticals,13357,6588,3,0.22,0.78,0.91,2,79,6,1,0,2.0,0
+HST-000174,ROUTE-016,Felixstowe,New York,Consumer Goods,11525,5516,2,0.8,0.74,0.6,3,37,12,6,1,0.2,0
+HST-000175,ROUTE-002,Rotterdam,New York,Automotive Parts,44292,5836,2,0.64,0.62,0.47,1,15,1,6,0,1.5,0
+HST-000176,ROUTE-020,Antwerp,Casablanca,Furniture,32167,2387,1,0.69,0.51,0.37,2,16,11,3,1,0.1,0
+HST-000177,ROUTE-014,Jeddah,Singapore,Pharmaceuticals,7513,7234,1,0.48,0.63,0.26,4,24,2,4,0,116.1,1
+HST-000178,ROUTE-008,Dubai,London,Textiles,20159,5488,4,0.9,0.88,0.11,2,20,11,6,1,4.9,1
+HST-000179,ROUTE-016,Felixstowe,New York,Chemicals,42764,5516,4,0.69,0.61,0.59,3,21,6,4,0,15.7,1
+HST-000180,ROUTE-009,Tokyo,Vancouver,Raw Materials,37430,7562,5,0.52,0.98,0.4,4,26,11,0,1,16.1,1
+HST-000181,ROUTE-008,Dubai,London,Furniture,26003,5488,3,0.82,0.9,0.46,1,36,11,4,1,1.4,0
+HST-000182,ROUTE-004,Singapore,Sydney,Chemicals,15713,6302,3,0.72,0.7,0.51,1,53,2,2,0,119.1,1
+HST-000183,ROUTE-012,Guangzhou,Hamburg,Raw Materials,25103,18120,3,0.32,0.89,0.49,2,58,7,1,0,7.1,1
+HST-000184,ROUTE-005,Hamburg,Shanghai,Chemicals,21253,19540,1,0.27,0.68,0.48,1,60,6,0,0,25.3,1
+HST-000185,ROUTE-014,Jeddah,Singapore,Automotive Parts,2221,7234,1,0.47,0.66,0.28,2,50,2,2,0,0.3,0
+HST-000186,ROUTE-018,Mombasa,Jeddah,Textiles,37983,2812,1,0.24,0.63,0.14,2,79,9,1,0,10.3,1
+HST-000187,ROUTE-012,Guangzhou,Hamburg,Food & Perishables,16660,18120,4,0.44,0.55,0.5,5,46,12,5,1,38.6,1
+HST-000188,ROUTE-011,Cape Town,Mumbai,Chemicals,43166,8146,3,0.96,0.6,0.24,5,34,10,1,1,1.2,0
+HST-000189,ROUTE-016,Felixstowe,New York,Furniture,16387,5516,4,0.33,0.56,0.39,3,32,6,3,0,37.3,1
+HST-000190,ROUTE-015,Piraeus,Istanbul,Textiles,29234,612,1,0.64,0.9,0.45,1,59,5,6,0,5.3,1
+HST-000191,ROUTE-014,Jeddah,Singapore,Chemicals,5347,7234,3,0.42,0.96,0.57,3,45,8,4,0,139.4,1
+HST-000192,ROUTE-018,Mombasa,Jeddah,Furniture,42323,2812,3,0.3,0.82,0.08,5,70,2,0,0,1.6,0
+HST-000193,ROUTE-011,Cape Town,Mumbai,Chemicals,7443,8146,1,0.57,0.78,0.46,2,31,1,0,0,1.9,0
+HST-000194,ROUTE-019,Callao,Shanghai,Raw Materials,10379,17240,1,0.34,0.98,0.38,5,85,6,0,0,7.7,1
+HST-000195,ROUTE-007,Busan,Long Beach,Raw Materials,32149,9648,2,0.54,0.66,0.23,4,21,6,3,0,59.3,1
+HST-000196,ROUTE-006,Santos,Rotterdam,Textiles,34316,9616,2,0.35,0.73,0.82,3,65,3,4,0,21.5,1
+HST-000197,ROUTE-020,Antwerp,Casablanca,Textiles,29963,2387,1,0.45,0.64,0.47,4,39,10,3,1,3.2,0
+HST-000198,ROUTE-018,Mombasa,Jeddah,Pharmaceuticals,24472,2812,1,0.52,0.74,0.63,2,84,6,1,0,14.7,1
+HST-000199,ROUTE-012,Guangzhou,Hamburg,Consumer Goods,40959,18120,3,0.26,0.81,0.36,1,58,3,6,0,5.5,1
+HST-000200,ROUTE-005,Hamburg,Shanghai,Raw Materials,25958,19540,3,0.35,0.74,0.65,5,63,7,4,0,0.7,0
+HST-000201,ROUTE-006,Santos,Rotterdam,Consumer Goods,19429,9616,4,0.48,0.93,0.92,3,75,3,1,0,34.7,1
+HST-000202,ROUTE-014,Jeddah,Singapore,Consumer Goods,27738,7234,3,0.36,0.52,0.51,2,43,12,6,1,16.0,1
+HST-000203,ROUTE-015,Piraeus,Istanbul,Furniture,49161,612,1,0.13,0.89,0.54,2,47,8,4,0,0.2,0
+HST-000204,ROUTE-015,Piraeus,Istanbul,Raw Materials,14822,612,3,0.26,1.0,0.32,2,56,7,0,0,1.8,0
+HST-000205,ROUTE-004,Singapore,Sydney,Textiles,14254,6302,3,0.8,0.82,0.15,1,59,12,4,1,4.6,1
+HST-000206,ROUTE-012,Guangzhou,Hamburg,Raw Materials,18921,18120,3,0.79,0.64,0.47,4,25,10,4,1,2.7,0
+HST-000207,ROUTE-004,Singapore,Sydney,Pharmaceuticals,49658,6302,4,0.14,0.93,0.2,4,32,7,0,0,3.0,0
+HST-000208,ROUTE-013,Ho Chi Minh City,Yokohama,Consumer Goods,9817,4210,4,0.56,0.54,0.53,4,32,10,5,1,88.5,1
+HST-000209,ROUTE-015,Piraeus,Istanbul,Consumer Goods,21949,612,4,0.62,0.83,0.26,1,20,10,0,1,8.9,1
+HST-000210,ROUTE-009,Tokyo,Vancouver,Machinery,19085,7562,1,0.65,0.89,0.59,4,51,6,4,0,32.1,1
+HST-000211,ROUTE-001,Shanghai,Los Angeles,Automotive Parts,10853,10463,5,0.35,1.0,0.89,4,15,8,3,0,76.9,1
+HST-000212,ROUTE-012,Guangzhou,Hamburg,Food & Perishables,5901,18120,1,0.33,0.65,0.75,2,56,6,5,0,2.8,0
+HST-000213,ROUTE-001,Shanghai,Los Angeles,Textiles,31748,10463,1,0.53,0.5,0.75,4,52,2,1,0,1.7,0
+HST-000214,ROUTE-005,Hamburg,Shanghai,Consumer Goods,5141,19540,3,0.12,0.66,0.87,1,60,4,3,0,3.0,0
+HST-000215,ROUTE-005,Hamburg,Shanghai,Pharmaceuticals,4983,19540,3,0.16,0.68,0.44,4,55,9,4,0,2.5,0
+HST-000216,ROUTE-015,Piraeus,Istanbul,Textiles,6181,612,3,0.32,0.98,0.24,1,22,2,1,0,8.5,1
+HST-000217,ROUTE-020,Antwerp,Casablanca,Furniture,19172,2387,5,0.44,0.8,0.16,2,57,12,0,1,77.2,1
+HST-000218,ROUTE-013,Ho Chi Minh City,Yokohama,Automotive Parts,16299,4210,1,0.67,0.51,0.27,2,53,8,5,0,3.4,0
+HST-000219,ROUTE-014,Jeddah,Singapore,Machinery,36306,7234,5,0.84,0.51,0.09,2,45,11,1,1,13.4,1
+HST-000220,ROUTE-017,Colombo,Melbourne,Chemicals,28259,8432,4,0.68,0.58,0.1,1,20,12,3,1,3.9,0
+HST-000221,ROUTE-005,Hamburg,Shanghai,Raw Materials,21913,19540,2,0.36,0.98,0.46,2,59,7,4,0,0.5,0
+HST-000222,ROUTE-020,Antwerp,Casablanca,Furniture,4106,2387,3,0.13,0.85,0.47,2,57,5,5,0,2.1,0
+HST-000223,ROUTE-009,Tokyo,Vancouver,Pharmaceuticals,24870,7562,3,0.13,0.95,0.25,3,32,3,5,0,1.1,0
+HST-000224,ROUTE-019,Callao,Shanghai,Automotive Parts,33015,17240,1,0.65,0.58,0.4,4,78,8,4,0,2.7,0
+HST-000225,ROUTE-004,Singapore,Sydney,Textiles,49047,6302,4,0.06,0.52,0.27,5,17,9,0,0,107.2,1
+HST-000226,ROUTE-014,Jeddah,Singapore,Textiles,21589,7234,2,0.1,0.69,0.35,5,35,4,3,0,71.3,1
+HST-000227,ROUTE-013,Ho Chi Minh City,Yokohama,Automotive Parts,30980,4210,2,0.44,0.5,0.17,3,34,5,6,0,23.1,1
+HST-000228,ROUTE-019,Callao,Shanghai,Consumer Goods,13307,17240,2,0.95,0.51,0.65,3,70,12,4,1,6.7,1
+HST-000229,ROUTE-013,Ho Chi Minh City,Yokohama,Food & Perishables,7312,4210,2,0.72,0.99,0.14,2,30,4,4,0,10.8,1
+HST-000230,ROUTE-014,Jeddah,Singapore,Machinery,30545,7234,1,0.39,0.91,0.09,3,52,12,0,1,94.7,1
+HST-000231,ROUTE-009,Tokyo,Vancouver,Machinery,26252,7562,3,0.49,0.54,0.17,4,35,12,6,1,5.4,1
+HST-000232,ROUTE-015,Piraeus,Istanbul,Machinery,27141,612,5,0.2,0.65,0.21,1,37,2,4,0,43.8,1
+HST-000233,ROUTE-002,Rotterdam,New York,Textiles,21982,5836,1,0.3,0.76,0.46,2,60,3,0,0,0.1,0
+HST-000234,ROUTE-013,Ho Chi Minh City,Yokohama,Consumer Goods,36934,4210,1,0.37,0.9,0.12,1,30,12,4,1,0.9,0
+HST-000235,ROUTE-007,Busan,Long Beach,Chemicals,24895,9648,1,0.71,0.96,0.09,5,56,11,5,1,31.4,1
+HST-000236,ROUTE-003,Mumbai,Dubai,Machinery,8529,1923,1,0.45,0.91,0.29,1,18,1,3,0,0.7,0
+HST-000237,ROUTE-007,Busan,Long Beach,Pharmaceuticals,18521,9648,1,0.48,0.62,0.23,3,24,5,3,0,0.2,0
+HST-000238,ROUTE-009,Tokyo,Vancouver,Chemicals,9493,7562,4,0.42,0.82,0.53,4,56,7,1,0,3.1,0
+HST-000239,ROUTE-012,Guangzhou,Hamburg,Consumer Goods,36185,18120,2,0.32,0.59,0.51,2,51,8,2,0,3.1,0
+HST-000240,ROUTE-002,Rotterdam,New York,Consumer Goods,35196,5836,5,0.73,0.55,0.44,2,52,6,6,0,3.7,0
+HST-000241,ROUTE-002,Rotterdam,New York,Textiles,38228,5836,1,0.46,0.9,0.47,5,26,7,2,0,70.1,1
+HST-000242,ROUTE-019,Callao,Shanghai,Pharmaceuticals,37403,17240,2,0.17,0.52,0.34,3,86,4,6,0,20.0,1
+HST-000243,ROUTE-020,Antwerp,Casablanca,Textiles,9051,2387,4,0.64,0.66,0.06,3,26,6,5,0,3.1,0
+HST-000244,ROUTE-017,Colombo,Melbourne,Machinery,5253,8432,2,0.12,0.65,0.13,2,57,6,5,0,3.2,0
+HST-000245,ROUTE-016,Felixstowe,New York,Machinery,11916,5516,5,0.73,0.68,0.45,4,59,12,4,1,54.6,1
+HST-000246,ROUTE-001,Shanghai,Los Angeles,Furniture,26163,10463,4,0.94,0.98,0.44,3,26,10,0,1,0.6,0
+HST-000247,ROUTE-003,Mumbai,Dubai,Textiles,23228,1923,4,0.11,0.85,0.43,4,55,6,1,0,6.9,1
+HST-000248,ROUTE-009,Tokyo,Vancouver,Automotive Parts,47713,7562,2,0.34,0.58,0.3,4,39,1,0,0,31.9,1
+HST-000249,ROUTE-019,Callao,Shanghai,Textiles,11159,17240,2,0.27,0.98,0.35,2,57,8,0,0,55.7,1
+HST-000250,ROUTE-003,Mumbai,Dubai,Machinery,39430,1923,1,0.96,0.58,0.58,2,60,10,3,1,5.6,1
+HST-000251,ROUTE-018,Mombasa,Jeddah,Raw Materials,17884,2812,2,0.33,0.79,0.55,2,74,11,2,1,19.1,1
+HST-000252,ROUTE-020,Antwerp,Casablanca,Consumer Goods,13585,2387,1,0.25,0.54,0.56,2,28,2,0,0,2.0,0
+HST-000253,ROUTE-009,Tokyo,Vancouver,Automotive Parts,42565,7562,2,0.32,0.59,0.08,3,26,9,3,0,56.3,1
+HST-000254,ROUTE-005,Hamburg,Shanghai,Automotive Parts,6116,19540,3,0.83,0.61,0.34,2,89,11,2,1,138.0,1
+HST-000255,ROUTE-016,Felixstowe,New York,Furniture,15943,5516,2,0.65,0.52,0.39,3,20,8,2,0,3.9,0
+HST-000256,ROUTE-005,Hamburg,Shanghai,Automotive Parts,29928,19540,4,0.14,0.71,0.94,3,68,3,1,0,2.5,0
+HST-000257,ROUTE-020,Antwerp,Casablanca,Food & Perishables,21455,2387,1,0.69,0.78,0.56,3,19,12,6,1,0.0,0
+HST-000258,ROUTE-020,Antwerp,Casablanca,Furniture,34746,2387,1,0.45,0.79,0.63,1,41,7,0,0,64.3,1
+HST-000259,ROUTE-018,Mombasa,Jeddah,Machinery,27428,2812,3,0.38,0.59,0.29,3,86,5,3,0,1.6,0
+HST-000260,ROUTE-013,Ho Chi Minh City,Yokohama,Machinery,45753,4210,4,0.68,0.51,0.54,2,45,4,0,0,32.7,1
+HST-000261,ROUTE-008,Dubai,London,Pharmaceuticals,20192,5488,3,0.59,0.82,0.16,2,35,12,3,1,3.0,0
+HST-000262,ROUTE-017,Colombo,Melbourne,Machinery,4183,8432,1,0.55,0.7,0.52,3,25,9,6,0,0.7,0
+HST-000263,ROUTE-007,Busan,Long Beach,Electronics,16850,9648,4,0.54,0.64,0.54,3,18,1,3,0,0.5,0
+HST-000264,ROUTE-001,Shanghai,Los Angeles,Textiles,24909,10463,1,0.66,0.79,0.53,2,43,8,4,0,3.0,0
+HST-000265,ROUTE-003,Mumbai,Dubai,Food & Perishables,2298,1923,4,0.6,0.61,0.18,2,25,7,0,0,35.1,1
+HST-000266,ROUTE-001,Shanghai,Los Angeles,Consumer Goods,9171,10463,5,0.46,0.8,0.91,4,53,11,1,1,16.1,1
+HST-000267,ROUTE-015,Piraeus,Istanbul,Food & Perishables,14800,612,2,0.49,0.79,0.05,5,58,8,2,0,3.4,0
+HST-000268,ROUTE-018,Mombasa,Jeddah,Furniture,40414,2812,2,0.29,0.64,0.25,2,61,5,2,0,3.8,0
+HST-000269,ROUTE-010,Lagos,Amsterdam,Textiles,10325,6588,4,0.61,0.9,0.69,3,70,9,6,0,2.9,0
+HST-000270,ROUTE-016,Felixstowe,New York,Food & Perishables,17501,5516,3,0.46,1.0,0.54,2,39,7,3,0,2.7,0
+HST-000271,ROUTE-016,Felixstowe,New York,Machinery,33747,5516,4,0.66,0.59,0.11,1,25,5,6,0,74.5,1
+HST-000272,ROUTE-011,Cape Town,Mumbai,Automotive Parts,15065,8146,2,0.67,0.69,0.4,3,34,6,1,0,9.1,1
+HST-000273,ROUTE-019,Callao,Shanghai,Furniture,5167,17240,1,0.53,0.76,0.57,4,87,8,1,0,104.9,1
+HST-000274,ROUTE-019,Callao,Shanghai,Consumer Goods,9886,17240,3,0.39,0.82,0.41,3,66,6,6,0,10.1,1
+HST-000275,ROUTE-006,Santos,Rotterdam,Furniture,10883,9616,1,0.35,0.71,0.58,3,60,8,6,0,29.5,1
+HST-000276,ROUTE-001,Shanghai,Los Angeles,Machinery,35301,10463,1,0.56,0.61,0.87,2,58,4,0,0,19.3,1
+HST-000277,ROUTE-003,Mumbai,Dubai,Electronics,20042,1923,3,0.29,0.94,0.65,2,48,5,3,0,1.4,0
+HST-000278,ROUTE-007,Busan,Long Beach,Pharmaceuticals,26936,9648,3,0.14,0.87,0.4,2,29,1,1,0,12.9,1
+HST-000279,ROUTE-009,Tokyo,Vancouver,Raw Materials,41337,7562,3,0.51,0.51,0.46,3,18,1,4,0,23.4,1
+HST-000280,ROUTE-005,Hamburg,Shanghai,Textiles,46060,19540,3,0.76,0.83,0.48,3,55,11,5,1,39.8,1
+HST-000281,ROUTE-020,Antwerp,Casablanca,Automotive Parts,19027,2387,2,0.48,0.89,0.55,5,21,2,6,0,15.8,1
+HST-000282,ROUTE-018,Mombasa,Jeddah,Consumer Goods,14111,2812,2,0.31,0.54,0.12,3,76,12,3,1,146.8,1
+HST-000283,ROUTE-003,Mumbai,Dubai,Automotive Parts,17270,1923,5,0.51,0.73,0.11,2,44,11,1,1,12.7,1
+HST-000284,ROUTE-004,Singapore,Sydney,Automotive Parts,3507,6302,3,0.17,0.68,0.31,3,23,1,6,0,0.4,0
+HST-000285,ROUTE-011,Cape Town,Mumbai,Pharmaceuticals,7960,8146,2,0.32,0.93,0.53,3,44,7,3,0,0.5,0
+HST-000286,ROUTE-002,Rotterdam,New York,Pharmaceuticals,7296,5836,4,0.52,0.59,0.28,2,45,7,4,0,47.8,1
+HST-000287,ROUTE-005,Hamburg,Shanghai,Consumer Goods,32489,19540,1,0.23,0.66,0.76,3,83,2,3,0,2.3,0
+HST-000288,ROUTE-019,Callao,Shanghai,Textiles,44398,17240,3,0.48,0.72,0.77,3,88,6,4,0,15.6,1
+HST-000289,ROUTE-018,Mombasa,Jeddah,Furniture,4076,2812,2,0.38,0.75,0.15,4,65,1,5,0,6.3,1
+HST-000290,ROUTE-017,Colombo,Melbourne,Textiles,36577,8432,5,0.36,0.72,0.39,1,40,11,3,1,16.5,1
+HST-000291,ROUTE-001,Shanghai,Los Angeles,Automotive Parts,26939,10463,2,0.63,0.9,0.93,3,50,7,0,0,2.2,0
+HST-000292,ROUTE-015,Piraeus,Istanbul,Machinery,24312,612,4,0.28,0.88,0.41,4,29,1,6,0,19.5,1
+HST-000293,ROUTE-001,Shanghai,Los Angeles,Machinery,23774,10463,4,0.56,0.55,0.88,3,33,11,6,1,3.0,0
+HST-000294,ROUTE-014,Jeddah,Singapore,Automotive Parts,17165,7234,2,0.9,0.61,0.54,2,27,10,1,1,37.7,1
+HST-000295,ROUTE-019,Callao,Shanghai,Automotive Parts,30024,17240,1,0.4,0.77,0.33,5,87,8,5,0,1.9,0
+HST-000296,ROUTE-017,Colombo,Melbourne,Pharmaceuticals,45838,8432,2,0.76,0.8,0.24,4,23,10,1,1,28.6,1
+HST-000297,ROUTE-008,Dubai,London,Food & Perishables,26574,5488,4,0.15,0.8,0.58,3,43,6,2,0,2.2,0
+HST-000298,ROUTE-011,Cape Town,Mumbai,Raw Materials,41956,8146,3,0.25,0.67,0.45,5,28,4,1,0,3.8,0
+HST-000299,ROUTE-017,Colombo,Melbourne,Raw Materials,46002,8432,2,0.55,0.74,0.39,3,60,11,2,1,66.3,1
+HST-000300,ROUTE-010,Lagos,Amsterdam,Chemicals,1336,6588,2,0.09,0.53,0.47,4,56,9,0,0,2.7,0

@@ -1,0 +1,286 @@
+/* ============================================================
+   PREDICTIONS.CSS — Predictions & Simulation Page
+   Supply Chain Risk Prediction Engine
+   ============================================================ */
+
+/* --- Tabs Navigation --- */
+.tabs {
+  margin-bottom: var(--space-6);
+}
+
+.tab-nav {
+  display: flex;
+  gap: 2px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: 3px;
+  width: fit-content;
+}
+
+.tab-btn {
+  padding: 8px 20px;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.tab-btn.active {
+  background: var(--accent-blue);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.tab-btn:hover:not(.active) {
+  color: var(--text-primary);
+  background: var(--accent-blue-glow);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* --- Predictions Layout --- */
+.predictions-layout {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+/* --- Predict Form --- */
+.predict-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.predict-form-title {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+}
+
+/* --- Result Card --- */
+.result-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  animation: fadeInUp 0.5s ease both;
+}
+
+.result-card-header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.result-card-title {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+/* --- Risk Gauge Container --- */
+.risk-gauge-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-bottom: var(--space-6);
+}
+
+/* --- Factors List (Horizontal Bar Chart) --- */
+.factors-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.factor-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.factor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.factor-name {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.factor-value {
+  font-size: var(--font-xs);
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.factor-bar {
+  height: 8px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.factor-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+  transition: width 1s ease;
+}
+
+.factor-bar-fill.high {
+  background: linear-gradient(90deg, var(--accent-amber), var(--accent-rose));
+}
+
+.factor-bar-fill.critical {
+  background: linear-gradient(90deg, var(--accent-rose), #b91c1c);
+}
+
+/* --- Recommendations Grid --- */
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.recommendation-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  transition: border-color var(--transition-fast);
+}
+
+.recommendation-card:hover {
+  border-color: var(--accent-blue);
+}
+
+.recommendation-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--accent-blue-glow);
+  color: var(--accent-blue);
+}
+
+.recommendation-text {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.recommendation-text strong {
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+/* --- Simulator Panel --- */
+.simulator-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.simulator-panel-title {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+}
+
+.slider-group {
+  margin-bottom: var(--space-5);
+}
+
+.slider-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+}
+
+.slider-label-text {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.slider-value {
+  font-size: var(--font-sm);
+  font-weight: 700;
+  color: var(--accent-blue);
+  min-width: 40px;
+  text-align: right;
+}
+
+/* --- Scenario Compare --- */
+.scenario-compare {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.scenario-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  text-align: center;
+}
+
+.scenario-card-title {
+  font-size: var(--font-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .predictions-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .scenario-compare {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .recommendations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-nav {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
